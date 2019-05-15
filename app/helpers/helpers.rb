@@ -7,6 +7,7 @@ class Helpers
   end 
   
   def self.is_logged_in?(session)
+    binding.pry
     if @user.id == session[:user_id]
       return true 
     end 
